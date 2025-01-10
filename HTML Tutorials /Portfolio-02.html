@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- feildset and the form starts here: -->
+<fieldset>
+    <legend><h2>Portfolio-02</h2></legend></h1>
+    <h4><u>Class wise Student Information:</u></h4>
+    <form action="https://drive.google.com/drive/folders/1u8_cnPfh7jEq6_NWxg69pZ6LzoYVuSF-?usp=drive_link">
+        <fieldset>
+            <legend><i>Personal Information</i></legend>
+            <!-- Name field -->
+             <label for="name">1. Name:</label>
+             <input type="text" id="name" placeholder="Name">
+             <!-- Email Id -->
+             <label for="Email Id">2. Email Id:</label>
+             <input type="email" id="Email Id" pattern=".+@gmail.com" size="10" placeholder="Email Id">
+             <!-- Phone -->
+             <label for="phone">3. Phone:</label> 
+             <input type="tel" id="phone" placeholder="Phone Number">
+             <!-- break -->
+             <br><br>
+             <!-- Date of birth -->
+             <label for="dob">4. Date of Birth:</label> 
+             <input type="date" id="dob">
+             <!-- Gender -->
+            <h>5. Gender:</h>
+             <input type="radio" id="male" name="gender" value="Male">
+             <label for="male">Male</label>
+             <input type="radio" id="female" name="gender" value="Female">
+             <label for="female">Female</label>
+             <input type="radio" id="other" name="gender" value="other">
+             <label for="other">Other</label>
+             <!-- Country -->
+             <label for="country">6. Select Country:</label> 
+             <!-- <input type="select" id="country"> -->
+             <select name="country" id="country">
+                <option value="select">Select</option>
+                <option value="- - - - -">- - - - -</option>
+                <option value="usa">India</option>
+                <option value="uk">UK</option>
+                <option value="india">USA</option>
+             </select>
+        </fieldset>
+        <!-- Another field set -->
+         <fieldset>
+            <legend><i>Address</i></legend>
+            <form>
+                <!-- Street -->
+                <label for="street">1. Street Name:</label>
+                <input type="text" id="street" placeholder="Street name">
+                <!-- City -->
+                 <label for="city">2. City:</label>
+                 <input type="text" id="city" placeholder="City Name" Size="20">
+                 <!-- State -->
+                 <label for="state">3. Select State:</label>
+                 <select name="state" id="state">
+                    <option value="select">Select</option>
+                    <option value="- - - - -">- - - - - - - -</option>
+                    <option value="Gujaart">Gujarat</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Haryana">Haryana</option>
+                 </select>
+                 <br><br>
+                 <!-- zipcode -->
+                 <label for="zipcode">4. Zipcode</label>
+                 <input type="text" id="zipcode" placeholder="Enter Zipcode">
+            </form>
+         </fieldset>
+         <!-- 3rd fieldset -->
+         <form>
+            <fieldset>
+                <legend><i>Other Information</i></legend>
+                <!-- Upload a photo -->
+                <label for="photo">1. Upload a Passport size photo:</label>
+                <input type="file" id="photo" value="choose file">
+                <br><br>
+                <!-- Comments -->
+                <label for="comments">2. Comments: </label>
+                <textarea name="Comments" id="comments" placeholder="Feed-up me..." rows="1"></textarea>
+                <!-- or for the comments -->
+                 <!-- <label for="comments">Comments:</label>
+                 <input type="text" id="comments" placeholder="Feed up me" rows="1"> -->
+                 <!-- break the line  -->
+                  <br><br>
+                <!-- agreement checkbox  -->
+                 <input type="checkbox" id="agree">
+                 <label for="agree">I agree to the terms of the services</label>
+            </fieldset>
+         </form>
+    </form>
+    <br>
+    <button>Submit</button>
+</fieldset>
+
+</body>
+</html>

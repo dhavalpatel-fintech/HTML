@@ -1,0 +1,716 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-16">
+    <!-- 23. view port and the initial size -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html practise</title>
+
+    <!-- 13. linking the file -->
+     <link rel="stylesheet" href="style.css">
+
+     <style>
+        body{
+            background-color: rgb(193, 188, 188);
+        }
+        table{
+            /* width: 100px; */
+            /* border-collapse: collapse; */
+            text-align: center;
+        }
+        th{
+            background-color: lightcoral;
+        }
+        tr:nth-child(even){
+            background-color:  lightpink ;
+        }
+        tr:nth-child(odd){
+            background-color:lightskyblue;
+        }
+
+        /* the new table called the dream table */
+        .dreamCompany{
+            color: whitesmoke;
+            width: 200%;
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+     </style>
+ </head>
+ <body>
+    <div>
+        <p>There are different types of the tags in the HTML </p>
+
+        lets start with the fresh new in the html concepts 
+        <pre>
+            The very first thing is the web development:
+            1. consisst of the Front end backend and the full stack
+            2. There are the things like: website and the web apps 
+            website are the static form of the web pages and the web apps are th dynamic forms of the web pages,
+            where one user can interact witg the internet andapply some commands and get the desired outputs
+            3. The most beautiful thing is called the MERN stack >> like : MongoDB, Express.js, React.js, Node.js
+            4.Netwrk >> there are different types of the network like : LAN, MAN, WAN 
+            5. IP address >> internet protocol address> _._._._ the first three are the network id and the last one is the host id
+            6. Web engines are like : Webkit and the blink
+            7. when the local host request for something then the router sends the request to the server via the IP address using the DNS>> DOMAIN NAME SYSTEM or the RESOLUTION
+
+            8. INternet >> is the interconnected network firstly used by the US Defence in 1960, by the project called the 
+            ARPAnet >> AdvancedResearchProjectNetwork
+            9.Protocol stack >> when the information is sent using the different small 1kb packets is called the protocol stack
+            10. so this is how the internet works.
+
+            </pre>
+            <!-- 1. abbrevation tag -->
+            <abbr title="Hyper Text Markup Language">
+                HTML
+                <p title="HTML Child and information">The html has the 2 main childs : head and the body inside it if adding then they are called as the grand chids</p>
+            </abbr>
+            <!-- 2. address tag -->
+            <address>
+                My residence : D/42 Gokuldham society Kathwada Road Nava Naroda
+            </address>
+            <!-- 3. Heading and the title  -->
+             <h1 title="The profile">Hello, Duniya!!</h1>
+
+             <!-- 4.a: anchor tag and the blanks  -->
+              <!-- to go to the another page -->
+              <a href="http://google.com" target="_blank" rel="noopener noreferrer">Google</a>
+            
+              <!-- for the link to redirect -->
+              <a href="http://"></a> 
+
+              <!-- for the mail redirect -->
+               <a href="mailto:dhaval@google.com"></a>
+
+               <!-- for the tel redirect -->
+                <a href="tel:+5252552"></a>
+
+            <!-- 5. horizontal line -->
+             <hr>
+             <hr>
+
+             <!-- 6. poem problem in the html >> pre -->
+
+             <pre>
+                1. betty bought some butter 
+                2. but the butter was bitter
+
+                3. so betty bought some another butter 
+                4. to make the bitter butter more better
+             </pre>
+
+             <!-- 7. strong and the bold -->
+
+             <p>Hello I am <strong>dhaval</strong> <b>patel</b></p>
+
+             <!-- 8. em and the italicise -->
+              <p><em>Hello</em> everyone, <i>how are you,</i> all?</p>
+
+              <!-- 9. small >> to make the things small -->
+               <p>This is my new <small>small hamper </small>to you!!</p>
+
+               <!-- 10. del and the script -->
+                <p>you know <del>nothing</del> or <s>anything</s></p>
+
+                <!-- 11. mark >> also called as the highlights  -->
+                 <p>You know the <mark>Yellow highlights.</mark></p>
+
+                 <!-- 12. opacity and the alpho in the color -->
+                <p style="background-color: rgba(175, 202, 144, 0.758);">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, ducimus fugit quibusdam ipsam deleniti tenetur quos ut aut fugiat.</p>
+
+                <!-- 13. linking the css file using the link:css -->
+                 
+                <!-- 14. blockquotes is for the citing of the research paper -->
+                 <blockquote cite="Dhaval Patel">
+                    This is the Reasearch Paper belongs to the Fundamentals of the Advanced Economics.
+                 </blockquote>
+
+                 <!-- 15. quotes in the the html -->
+                  <q>
+                    Work is Worship
+                  </q>
+                  <br>
+
+                  <!-- 16. bdo >> used for the dubai clients or the arabic languages having directing from the rtl or the ltr -->
+                   <br>
+                   <bdo dir="ltr">Dhaval Patel</bdo>
+                   <br>
+                   <bdo dir="rtl">Patel Dhaval</bdo>
+                   <br>
+                
+
+        <!-- 17. pictures >> the PSI concept >> picture, source, image -->
+
+
+        <picture>
+            <source media="(min-width:300px)" srcset="https://www.shutterstock.com/image-photo/calm-weather-on-sea-ocean-600nw-2212935531.jpg">
+            <img  style="border: 2px solid rgb(0, 0, 0);" width="100px" height="50px" src="https://www.shutterstock.com/image-photo/calm-weather-on-sea-ocean-600nw-2212935531.jpg" alt="Sea">
+        </picture>
+        <br><br>
+
+        <!-- 18. Image map generator -->
+
+        <img style="border: 2px solid black;" src="https://contentstatic.techgig.com/photo/98176223/Want-to-get-a-job-at-MAANG-firms-Know-these-top-10-questions.jpg" usemap="#image-map">
+        
+
+        <map name="image-map">
+            <area onclick="one()" target="" alt="Google" title="Google" href="" coords="0,10,64,158" shape="rect">
+
+            <area onclick="two()" target="" alt="Apple" title="Apple" href="" coords="71,12,125,157" shape="rect">
+
+            <area onclick="three()" target="" alt="meta" title="meta" href="" coords="134,4,191,158" shape="rect">
+
+            <area onclick="four()" target="" alt="amaozn" title="amaozn" href="" coords="196,3,253,155" shape="rect">
+
+            <area onclick="five()" target="" alt="Microsoft " title="Microsoft " href="" coords="260,3,314,158" shape="rect">
+        </map>
+        <br><br>
+
+        <!-- 19. Table in the html -->
+        <!-- add some styling in the head tag -->
+        <table border="2px" style="text-align: center;">
+            <!-- heading -->
+        <!-- also adding some odd even in it as the nth child(even/odd) -->
+            <colgroup>
+            <col span="2" style="background-color: lightgreen;"/>
+            </colgroup>
+            <thead>
+                <th>Name</th>
+                <th>Email</th>
+                <th>State</th>
+                <th>City</th>
+            </thead>
+            <!-- body -->
+             <tbody>
+                <!-- row-01 -->
+                <tr>
+                    <td>Dhaval Patel</td>
+                    <td>dhaval@google.com</td>
+                    <td>Gujarat</td>
+                    <td>Ahmedabad</td>
+                </tr>
+                <!-- row-02 -->
+                <tr>
+                    <td>Patel Dhaval</td>
+                    <td>patel@google.com</td>
+                    <td>Maharashtra</td>
+                    <td>Mumbai</td>
+                </tr>
+             </tbody>
+        </table>
+
+        <!-- 20. list >> -->
+         <pre>
+        There are 3 types of the lists :
+         1. Unordered List >> ul
+         2. Ordered List >> ol
+         3. data list >> dl
+         </pre>
+         <!-- ul -->
+          <p>1. unordered list</p>
+          <ul style="list-style-type: square;">
+            <li>A</li>
+            <li>B</li>
+          </ul>
+
+          <p>2. Ordered list</p>
+          <ol type="i">
+            <li>C</li>
+            <li>D</li>
+          </ol>
+
+          <p>3. Data list</p>
+          <dl>
+            This is the DATA LIST
+            <dt>My Passion
+                <dd>1.Code</dd>
+                <dd>2. Music</dd>
+            </dt>
+          </dl>
+
+          <!-- 21. ther is only 1 ID one the whole page and can have many classes in the whole page -->
+
+          <!-- 22. iFrames -->
+           <div class="dreamCompany">
+            <!-- <h1>My dream Companies:</h1> -->
+            <table>
+                <!-- heading -->
+                <thead>
+                    <th>Google</th>
+                    <th>Microsoft</th>
+                    <th>Apple</th>
+                    <th>Amazon</th>
+                    <th>Meta</th>
+                </thead>
+                <!-- body -->
+                 <tbody>
+                    <tr style="border: 3pox solid black;">
+                        <td><iframe width="560" height="315" src="https://www.youtube.com/embed/IeUZmBVPmDg?si=YmSIKk2CBqZE_4lt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
+                        <td><iframe width="560" height="315" src="https://www.youtube.com/embed/quh81ewf4GA?si=NWx-xXDGdqcwkR5G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
+                        <td><iframe width="560" height="315" src="https://www.youtube.com/embed/bu6bCgfwUf4?si=yLRtW0jHDhOK67R6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
+                        <td><iframe width="560" height="315" src="https://www.youtube.com/embed/PM2IUsK9IJM?si=ZjcrtiYK8uj6pf7L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
+                        <td><iframe width="560" height="315" src="https://www.youtube.com/embed/f1fbuOkxugs?si=c2850QSWIDTkjaGM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
+                    </tr>
+                 </tbody>
+               </table>
+           </div>
+
+           <!-- 24. code tag >>for the better code writings in the html -->
+            <p>The given code: <code>console.log("variable")</code> is the one to print someting in the JavaScript!!</p>
+
+            <!-- 25. kbd tag -->
+             <p>The: <u><kbd>ctrl</kbd> + <kbd>v</kbd></u> is used to paste the content.</p>
+
+            <!-- 26. samp >> used to print the sample from the my computers -->
+             <p>The smaple form the PC: <u><samp>File not found</samp></u></p>
+
+             <!-- 27. var >> used to denote the variable in the html -->
+              <p>The area of the reactangle is:<u><var>l</var> * <var>b</var></u></p>
+
+           <!-- 28. to make a FAQ's  -->
+            <!-- sdsp -->
+             <section>
+                <details>
+                    <summary>
+                        How are you, and How's your day going?
+                    </summary>
+                    <p>
+                        Well, I am fit & fine and yes, my day is going well.
+                    </p>
+                </details>
+             </section>
+
+             <!-- 29. time tag in the HTML -->
+              <p>
+                The cafe opens at <time>10:00 AM</time> and closes at <time>11:30 PM</time>
+              </p>
+              <p>
+                <time datetime="2025-01-15">My Birthday</time>
+              </p>
+
+              <!-- 30. form -->
+               <div>
+                <form action="" method="post" accept-charset="" autocomplete="on" enctype="multipart/form-data" target="_blank">
+                    <label for="firstname">First Name:</label>
+                    <input type="text" id="firstname">
+                    <br><br>
+                </form>
+               </div>
+
+               <!-- 31. with the reset icon in it -->
+                <form action="">
+                    <label for="laname" >Last Name:</label>
+                    <input type="text" id="fname" value="dhaval patel">
+                    <input type="reset" id="fname">
+                    <input type="submit">
+                </form>
+                <br>
+               
+                <!-- 32. input and the drop down options in the html -->
+                 <div>
+                    <!-- the belwo one is no longer in use: -->
+                    <label for="lang">Select the Course: </label>
+                    <input list="course">
+                    <datalist id="course">
+                        <option value="HTML">HTML</option>
+                        <option value="CSS">CSS</option>
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="React">React</option>
+                    </datalist>
+                 </div>
+                 <label for="course1">Select the course:</label>
+                 <select name="cousre1" id="course1">
+                    <option value="html">html</option>
+                    <option value="html">css</option>
+                    <option value="html">js</option>
+                    <option value="html">react</option>
+                 </select>
+                 <br>
+                 <hr>
+
+                 <!-- 33. give some hidden inputs for sending the tokens in the html  -->
+                 <label for="hidden" for="hidden">Hidden:</label> 
+                 <input type="hidden" id="hidden">
+
+                 <!-- 34. range in the html -->
+                  <label for="volume">Volume: </label>
+                  <input type="range" name="volume" id="volume">
+                  <br><br>
+
+        <!-- all the audio and the video files should be inside the folders in the html then only it will play or work -->
+                  <!-- 35. video in the html -->
+                   <video src="./../HTML /Level-01/HTML Tutorials /Video.mp4" controls muted autoplay> </video>
+                   <br><br>
+
+                   <!-- 36. audio in the html -->
+                    <audio src="./../HTML /Level-01/HTML Tutorials /Audio.mp3" controls muted autoplay></audio>
+                    <br><br>
+
+                    <!-- 37. canvas >> to write something on the canvas -->
+                     <canvas>write something on it...</canvas>
+
+                     <!-- 38. iframe -->
+                      <iframe height="500px" width="575px" src="iFrames.html" frameborder="0"></iframe>
+
+
+                      <hr>
+                      <hr>
+                      <hr>
+                      <hr>
+                      <hr>
+                      <hr>
+                      <hr>
+                      <hr>
+                      <hr>
+                      <hr>
+
+                      <!DOCTYPE html>
+                      <html lang="en">
+                      <head>
+                          <meta charset="UTF-8">
+                          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                          <title>1. Practise</title>
+                      
+                          <link rel="shortcut icon" href="logo" type="image/x-icon">
+                      </head>
+                      <body>
+                          
+                          <!-- boilers plate code  -->
+                      
+                      <!-- tag and an element -->
+                      <!-- an HTML provides the semantics, strucure and formatting -->
+                      
+                       <!-- 
+                      semantics: 
+                       1. heading >> h1
+                       2. paragraph >> p
+                       3. anchor tag >> a
+                       4. ul>>ol>>dl
+                       5. table>thead>th >>tbody>tr>td
+                       6. img
+                       7. form
+                       8. input
+                       9. lorem50
+                       10. label
+                       11. textarea
+                       -->
+                      
+                       <!-- 
+                       structure
+                       1. html
+                       2. head
+                       3. body
+                       4. header
+                       5. main
+                       6. aside
+                       7. footer
+                       8. article 
+                       9. section
+                       10. nav
+                       11. div
+                       12. span
+                       13. legend
+                       14. fieldset 
+                        -->
+                      
+                        <!-- 
+                        formatting 
+                        1. b >> strong
+                        2. i >> em
+                        3. u 
+                        4. s >> del
+                        5. strong
+                        6. em
+                        7. sup
+                        8. sub
+                        9. prev
+                        10. code
+                        11. br
+                        12. mark >> highlighht
+                        -->
+                      
+                        <!-- 
+                        EMMET: 
+                         1. > for nesting the tag
+                         2. . for the class
+                         3. # for the id
+                         4. {} for the paragraph to insert inside 
+                         5. + use to add the tag along with the another tag
+                         -->
+                      
+                         <h1>dhaval patel</h1>
+                      
+                      <!-- 1. > -->
+                       <p>
+                          <h1></h1>
+                       </p>
+                      
+                       <!-- 2. . -->
+                        <div class="class"></div>
+                      
+                        <!-- 3. # -->
+                         <div id="id"></div>
+                      
+                         <!-- 4. {} -->
+                          <p>dhaval patel</p>
+                      
+                          <!-- 5. + -->
+                           <p></p>
+                           <h2></h2>
+                      
+                      <!-- you can convert the inline element into the block one ansd vice a versa -->
+                       <!-- you can write display inside the tag as an attribute -->
+                      
+                       <!-- As "p" >> paragraph is a block element you can make it inline element -->
+                      
+                       <!-- keep it as a block element -->
+                        <p>block element:</p>
+                      <p style="display: block; background-color: #313131; color: aliceblue;">
+                          Hello Duniya, how are you??
+                      </p>
+                      
+                      <p>inline element:</p>
+                      <p style="display: inline; background-color: #313131; color: aliceblue;">
+                          Hello Duniya, how are you??
+                      </p>
+                      
+                      <!-- nav bar -->
+                      <nav>
+                          <ul style="list-style: none;">
+                              <li>
+                                  <a href="#id">A</a>
+                                  <a href="#iframe">B</a>
+                                  <a href="#image">C</a>
+                                  <a href="#video">D</a>
+                              </li>
+                          </ul>
+                      </nav>
+                      
+                      <!-- making a table with the below functionalities: -->
+                      <!-- table -->
+                      <!-- thead >> th -->
+                      <!-- tbody >> tr>td -->
+                      <!-- tfoot >> tr>td -->
+                      <!-- colspan and rowspan -->
+                      
+                      <table border="2px solid blue" style="text-align: center;">
+                          <!-- heading -->
+                          <thead>
+                              <th>
+                                  Sr.No.
+                              </th>
+                              <th>
+                                  Name
+                              </th>
+                              <th>
+                                  State
+                              </th>
+                              <th>
+                                  City
+                              </th>
+                          </thead>
+                          <!-- body -->
+                          <tbody>
+                              <tr>
+                                  <td rowspan="2">1</td>
+                                  <td>Dhaval Patel</td>
+                                  <td>Gujarat</td>
+                                  <td>Ahmedabad</td>
+                              </tr>
+                              <tr>
+                                  <td>Dhaval Patel</td>
+                                  <td>Gujarat</td>
+                                  <td>Ahmedabad</td>
+                              </tr>
+                          </tbody>
+                      
+                          <!-- footer -->
+                           <tfoot>
+                              <tr>
+                                  <td colspan="3"><b>Net Worth:</b></td>
+                                  <td>$ 62x10<sup>12</sup></td>
+                              </tr>
+                           </tfoot>
+                      </table>
+                      <br>
+                      
+                      <!-- FORM ELEMENTS IN THE HTML -->
+                       <!-- 1. SILO BFLT -->
+                        
+                        <!-- 1. SELECT -->
+                         <!-- 2. INPUT -->
+                          <!-- 3. LABEL -->
+                           <!-- 4. OPTION -->
+                            <!-- 5. BUTTON -->
+                             <!-- 6. FIELDSET -->
+                              <!-- 7. LEGEND -->
+                               <!-- 8. TEXTAREA -->
+                      
+                      <!-- Input types in the HTML form: -->
+                       <!-- NTTI PF BC DR -->
+                        <!-- number, text, tel, image, password, file, button, checkbox, date, radio -->
+                      
+                      <!-- 1. password -->
+                      
+                      <div>
+                          <label for="password">Enter the Password: </label>
+                          <input type="password" id="password" placeholder="Enter the password:">
+                      </div>
+                      
+                      <!-- 2. radio button -->
+                       <div>
+                          <label for="Gender">Select the Gender</label>
+                          <!-- male -->
+                          <input type="radio" id="male" name="Gender">
+                          <label for="male">Male</label>
+                          <!-- female -->
+                          <input type="radio" id="female" name="Gender">
+                          <label for="female">Female</label>
+                      </div>
+                      
+                      <!-- 3. number -->
+                       <label for="number">Select the number:</label>
+                       <input type="number">
+                       <br>
+                      
+                       <!-- 4. text -->
+                        <label for="text">Enter the text:</label>
+                        <input type="text">
+                        <br>
+                      
+                        <!-- 5. tel -->
+                         <label for="tel">Enter the Telephone:</label>
+                         <input type="tel" value="+91-">
+                         <br>
+                         <br>
+                      
+                         <!-- 6. image -->
+                          <label for="image">Insert the image:</label>
+                          <input type="image" src="Office.jpg" width="62px" height="62px">
+                          <br>
+                      
+                          <!-- 7. checkbox -->
+                           <label for="language">Select the language: </label>
+                      
+                           <input type="checkbox" id="CSS">
+                           <label for="CSS">Full Stack</label>
+                      
+                           <input type="checkbox" id="DSA">
+                           <label for="DSA">DSA</label>
+                      
+                           <input type="checkbox" id="SD">
+                           <label for="SD">SD</label>
+                           <br><br>
+                      
+                           <!-- 8. File -->
+                            <label for="file">Insert the file:</label>
+                            <input type="file">
+                            <br>
+                            <br>
+                            
+                            <!-- 9. button -->
+                             <input type="submit"/>
+                             <br>
+                             <br>
+                      
+                             <!-- 10. Date -->
+                              <label for="date">Insert the Date:</label>
+                              <input type="date">
+                              <br>
+                      
+                              <!-- 11. week -->
+                               <label for="week">Insert the Week:</label>
+                               <input type="week">
+                               <br><br>
+                      
+                      <!-- legends and the filedset -->
+                      
+                      <fieldset>
+                          <legend>
+                              Hello Duniya: This is legend inside the fieldset
+                          </legend>
+                      </fieldset>
+                      <br>
+                      
+                      <!-- text area -->
+                       <label for="comments">Enter the Comments here:</label>
+                      <textarea name="text" id="comments"></textarea>
+                      <br>
+                      
+                      <!-- slect the option in the dropdown -->
+                       <label for="">Select the Occupation:</label>
+                       <select name="list" id="list">
+                          <option value="Analyst">Analyst</option>
+                          <option value="SDE">SDE</option>
+                          <option value="Data Scientist">Data Scientist</option>
+                          <option value="Investment Banker">Investment Banker</option>
+                       </select>
+                       <br>
+                      
+                       <a href="mailto:dhaval@google.com">Mail</a>
+                       <a href="http://" target="_blank" rel="noopener noreferrer"></a>
+                       <a href="http://www.google.com">Manifesting Company</a>
+                       <a href="tel:+91-5252552">Phone</a>
+                       <br><br>
+                      
+                       <!-- sd>sp concept  -->
+                        <section>
+                          <details>
+                              <summary>
+                                  Any FAQ's?
+                              </summary>
+                              <p>
+                                  Yes, will discuss all those in the podcast!!
+                              </p>
+                          </details>
+                        </section>
+                        <!--  -->
+                        <hr>
+                      <br>
+                        <hr>
+                        <!--  -->
+                      
+                        <!-- iframe in the html -->
+                        <iframe id="iframe" src="practise.html" frameborder="0" style="border: 3px solid black;"></iframe>
+                      
+                        <!-- image in the html -->
+                        <img id="image" src="Office.jpg" alt="office pic" width="200px" style="border: 5px solid darkblue;">
+                      
+                        <!-- audio -->
+                         <audio src="" controls muted autoplay>Audio</audio>
+                         <input type="range">
+                         <br><br>
+                      
+                         <!-- video -->
+                          <video id="video" src="" controls muted autoplay>Video</video>
+                          <input type="range">
+                      
+                          <!-- anchor tag and the bookmarks >> already attached to the "A, B, C, D" -->
+                          <!-- please check it out and use the bookmarks using the nav>ul>li>a tags-->
+                      </body>
+                      </html>
+                    
+    </div>
+
+    <!-- attaching the file so called the JavaScript file -->
+     <!-- inside the body tag at the end of it... -->
+
+    <script>
+        function one(){
+            alert(`You have clicked on Google`)
+        }
+        function two(){
+            alert(`You have clicked on Apple`)
+        }
+        function three(){
+            alert(`You have clicked on Meta`)
+        }
+        function four(){
+            alert(`You have clicked on Amazon`)
+        }
+        function five(){
+            alert(`You have clicked on Microsoft`)
+        }
+    </script>
+ </body>
+ </html>

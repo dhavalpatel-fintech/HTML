@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        body{
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <!-- input tags>> intotal there are 22 input types -->
+    <form action="url" method="POST" accept-charset="UTF-16" autocomplete="on" enctype="multipart/form-data" target="_blank">
+        <label for="fname">Firts Name:</label>
+        <!-- input >> value -->
+        <input type="text" name="fname" placeholder="Enter the Name:" value="Dhaval Patel" id="fname">
+        <!-- reset -->
+        <input type="reset" value="reset">
+        <br/>
+        <br><br>
+
+        <!-- week -->
+         <label for="week">Week of the Year:</label>
+         <input type="week" name="week" id="week">
+
+         <br/>
+        <br><br> 
+
+
+        <!-- using the new thing called the link instead of the select and options in the HTML  >> which is very rarely used in the HTML Let's chjeck it out -->
+
+        <input list="editor" name="editor">
+        <datalist id="editor">
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+        </datalist> 
+        <br><br><br><br>
+
+        <!-- hidden is used for sending the tokens -->
+        <input type="hidden" name="">
+
+        <!-- Range is used to set the volume  -->
+
+         <input type="range" name="volume" id="volume">
+         <label for="volume">Volume</label>
+
+         <br><br><br><br>
+        <button>Submit</button>
+
+    </form>
+
+</body>
+</html>

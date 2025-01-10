@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1. Practise</title>
+
+    <link rel="shortcut icon" href="logo" type="image/x-icon">
+</head>
+<body>
+    
+    <!-- boilers plate code  -->
+
+<!-- tag and an element -->
+<!-- an HTML provides the semantics, strucure and formatting -->
+
+ <!-- 
+semantics: 
+ 1. heading >> h1
+ 2. paragraph >> p
+ 3. anchor tag >> a
+ 4. ul>>ol>>dl
+ 5. table>thead>th >>tbody>tr>td
+ 6. img
+ 7. form
+ 8. input
+ 9. lorem50
+ 10. label
+ 11. textarea
+ -->
+
+ <!-- 
+ structure
+ 1. html
+ 2. head
+ 3. body
+ 4. header
+ 5. main
+ 6. aside
+ 7. footer
+ 8. article 
+ 9. section
+ 10. nav
+ 11. div
+ 12. span
+ 13. legend
+ 14. fieldset 
+  -->
+
+  <!-- 
+  formatting 
+  1. b >> strong
+  2. i >> em
+  3. u 
+  4. s >> del
+  5. strong
+  6. em
+  7. sup
+  8. sub
+  9. prev
+  10. code
+  11. br
+  12. mark >> highlighht
+  -->
+
+  <!-- 
+  EMMET: 
+   1. > for nesting the tag
+   2. . for the class
+   3. # for the id
+   4. {} for the paragraph to insert inside 
+   5. + use to add the tag along with the another tag
+   -->
+
+   <h1>dhaval patel</h1>
+
+<!-- 1. > -->
+ <p>
+    <h1></h1>
+ </p>
+
+ <!-- 2. . -->
+  <div class="class"></div>
+
+  <!-- 3. # -->
+   <div id="id"></div>
+
+   <!-- 4. {} -->
+    <p>dhaval patel</p>
+
+    <!-- 5. + -->
+     <p></p>
+     <h2></h2>
+
+<!-- you can convert the inline element into the block one ansd vice a versa -->
+ <!-- you can write display inside the tag as an attribute -->
+
+ <!-- As "p" >> paragraph is a block element you can make it inline element -->
+
+ <!-- keep it as a block element -->
+  <p>block element:</p>
+<p style="display: block; background-color: #313131; color: aliceblue;">
+    Hello Duniya, how are you??
+</p>
+
+<p>inline element:</p>
+<p style="display: inline; background-color: #313131; color: aliceblue;">
+    Hello Duniya, how are you??
+</p>
+
+<!-- nav bar -->
+<nav>
+    <ul style="list-style: none;">
+        <li>
+            <a href="#id">A</a>
+            <a href="#iframe">B</a>
+            <a href="#image">C</a>
+            <a href="#video">D</a>
+        </li>
+    </ul>
+</nav>
+
+<!-- making a table with the below functionalities: -->
+<!-- table -->
+<!-- thead >> th -->
+<!-- tbody >> tr>td -->
+<!-- tfoot >> tr>td -->
+<!-- colspan and rowspan -->
+
+<table border="2px solid blue" style="text-align: center;">
+    <!-- heading -->
+    <thead>
+        <th>
+            Sr.No.
+        </th>
+        <th>
+            Name
+        </th>
+        <th>
+            State
+        </th>
+        <th>
+            City
+        </th>
+    </thead>
+    <!-- body -->
+    <tbody>
+        <tr>
+            <td rowspan="2">1</td>
+            <td>Dhaval Patel</td>
+            <td>Gujarat</td>
+            <td>Ahmedabad</td>
+        </tr>
+        <tr>
+            <td>Dhaval Patel</td>
+            <td>Gujarat</td>
+            <td>Ahmedabad</td>
+        </tr>
+    </tbody>
+
+    <!-- footer -->
+     <tfoot>
+        <tr>
+            <td colspan="3"><b>Net Worth:</b></td>
+            <td>$ 62x10<sup>12</sup></td>
+        </tr>
+     </tfoot>
+</table>
+<br>
+
+<!-- FORM ELEMENTS IN THE HTML -->
+ <!-- 1. SILO BFLT -->
+  
+  <!-- 1. SELECT -->
+   <!-- 2. INPUT -->
+    <!-- 3. LABEL -->
+     <!-- 4. OPTION -->
+      <!-- 5. BUTTON -->
+       <!-- 6. FIELDSET -->
+        <!-- 7. LEGEND -->
+         <!-- 8. TEXTAREA -->
+
+<!-- Input types in the HTML form: -->
+ <!-- NTTI PF BC DR -->
+  <!-- number, text, tel, image, password, file, button, checkbox, date, radio -->
+
+<!-- 1. password -->
+
+<div>
+    <label for="password">Enter the Password: </label>
+    <input type="password" id="password" placeholder="Enter the password:">
+</div>
+
+<!-- 2. radio button -->
+ <div>
+    <label for="Gender">Select the Gender</label>
+    <!-- male -->
+    <input type="radio" id="male" name="Gender">
+    <label for="male">Male</label>
+    <!-- female -->
+    <input type="radio" id="female" name="Gender">
+    <label for="female">Female</label>
+</div>
+
+<!-- 3. number -->
+ <label for="number">Select the number:</label>
+ <input type="number">
+ <br>
+
+ <!-- 4. text -->
+  <label for="text">Enter the text:</label>
+  <input type="text">
+  <br>
+
+  <!-- 5. tel -->
+   <label for="tel">Enter the Telephone:</label>
+   <input type="tel" value="+91-">
+   <br>
+   <br>
+
+   <!-- 6. image -->
+    <label for="image">Insert the image:</label>
+    <input type="image" src="Office.jpg" width="62px" height="62px">
+    <br>
+
+    <!-- 7. checkbox -->
+     <label for="language">Select the language: </label>
+
+     <input type="checkbox" id="CSS">
+     <label for="CSS">Full Stack</label>
+
+     <input type="checkbox" id="DSA">
+     <label for="DSA">DSA</label>
+
+     <input type="checkbox" id="SD">
+     <label for="SD">SD</label>
+     <br><br>
+
+     <!-- 8. File -->
+      <label for="file">Insert the file:</label>
+      <input type="file">
+      <br>
+      <br>
+      
+      <!-- 9. button -->
+       <input type="submit"/>
+       <br>
+       <br>
+
+       <!-- 10. Date -->
+        <label for="date">Insert the Date:</label>
+        <input type="date">
+        <br>
+
+        <!-- 11. week -->
+         <label for="week">Insert the Week:</label>
+         <input type="week">
+         <br><br>
+
+<!-- legends and the filedset -->
+
+<fieldset>
+    <legend>
+        Hello Duniya: This is legend inside the fieldset
+    </legend>
+</fieldset>
+<br>
+
+<!-- text area -->
+ <label for="comments">Enter the Comments here:</label>
+<textarea name="text" id="comments"></textarea>
+<br>
+
+<!-- slect the option in the dropdown -->
+ <label for="">Select the Occupation:</label>
+ <select name="list" id="list">
+    <option value="Analyst">Analyst</option>
+    <option value="SDE">SDE</option>
+    <option value="Data Scientist">Data Scientist</option>
+    <option value="Investment Banker">Investment Banker</option>
+ </select>
+ <br>
+
+ <a href="mailto:dhaval@google.com">Mail</a>
+ <a href="http://" target="_blank" rel="noopener noreferrer"></a>
+ <a href="http://www.google.com">Manifesting Company</a>
+ <a href="tel:+91-5252552">Phone</a>
+ <br><br>
+
+ <!-- sd>sp concept  -->
+  <section>
+    <details>
+        <summary>
+            Any FAQ's?
+        </summary>
+        <p>
+            Yes, will discuss all those in the podcast!!
+        </p>
+    </details>
+  </section>
+  <!--  -->
+  <hr>
+<br>
+  <hr>
+  <!--  -->
+
+  <!-- iframe in the html -->
+  <iframe id="iframe" src="practise.html" frameborder="0" style="border: 3px solid black;"></iframe>
+
+  <!-- image in the html -->
+  <img id="image" src="Office.jpg" alt="office pic" width="200px" style="border: 5px solid darkblue;">
+
+  <!-- audio -->
+   <audio src="" controls muted autoplay>Audio</audio>
+   <input type="range">
+   <br><br>
+
+   <!-- video -->
+    <video id="video" src="" controls muted autoplay>Video</video>
+    <input type="range">
+
+    <!-- anchor tag and the bookmarks >> already attached to the "A, B, C, D" -->
+    <!-- please check it out and use the bookmarks using the nav>ul>li>a tags-->
+</body>
+</html>
